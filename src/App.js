@@ -2,10 +2,30 @@ import React, { useState } from "react";
 import "./styles.css";
 
 const restaurantList = {
-  Indian: ["Spice Kitchen", "Seasonal Tastes", "Sukanta", "Barbeque Nation"],
-  Chinese: ["Five Fat Monks", "Mainland China", "Chinese Room", "Soy Affair"],
-  Italian: ["Little Italy", "Dario’s", "Arthur’s Theme", "Le Plaisir"],
-  Continental: ["Beetroot Bistro", "Chirp", "Barometer", "Kargo"]
+  Indian: [
+    "Spice Kitchen  9/10",
+    "Seasonal  8.5/10",
+    "Sukanta  7.5/10",
+    "Barbeque Nation  7/10"
+  ],
+  Chinese: [
+    "Five Fat Monks  8.5/10",
+    "Mainland China 8/10",
+    "Chinese Room  6/10",
+    "Soy Affair 7/10"
+  ],
+  Italian: [
+    "Little Italy  8.5/10",
+    "Dario’s  7.5/10",
+    "Arthur’s Theme  6.5/10",
+    "Le Plaisir  7/10"
+  ],
+  Continental: [
+    "Beetroot Bistro  9/10",
+    "Chirp   8/10",
+    "Barometer  8.5/10",
+    "Kargo  7/10"
+  ]
 };
 
 // let restaurantsWeKnow = Object.keys(restaurantList);
@@ -40,7 +60,10 @@ export default function App() {
       <h1
         style={{
           backgroundImage: "linear-gradient(#7b4397, #dc2430)",
-          padding: "1rem"
+          paddingTop: "3rem",
+          height: "120px",
+          color: "antiquewhite",
+          marginTop: 0
         }}
       >
         Good Food is Good Mood!!!
