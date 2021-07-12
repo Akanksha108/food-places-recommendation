@@ -11,25 +11,28 @@ const restaurantList = {
 // let restaurantsWeKnow = Object.keys(restaurantList);
 // console.log(restaurantsWeKnow);
 
-console.log(restaurantList.Indian);
-
 export default function App() {
   const [restaurants, setRestaurants] = useState("");
 
   function indianClickHandler(event) {
-    console.log(restaurantList.Indian);
+    var restaurants = restaurantList.Indian;
+    //console.log(restaurants);
+    setRestaurants(restaurants);
   }
 
   function chineseClickHandler() {
-    console.log(restaurantList.Chinese);
+    var restaurants = restaurantList.Chinese;
+    setRestaurants(restaurants);
   }
 
   let italianClickHandler = () => {
-    console.log(restaurantList.Italian);
+    var restaurants = restaurantList.Italian;
+    setRestaurants(restaurants);
   };
 
   let continentalClickHandler = () => {
-    console.log(restaurantList.Continental);
+    var restaurants = restaurantList.Continental;
+    setRestaurants(restaurants);
   };
 
   return (
@@ -55,6 +58,24 @@ export default function App() {
         <button onClick={italianClickHandler}>Italian</button>
         <button onClick={continentalClickHandler}>Continental</button>
       </div>
+      <ul>
+        <li style={{ fontWeight: "bold", padding: "10px" }}>
+          {" "}
+          {restaurants[0]}{" "}
+        </li>
+        <li style={{ fontWeight: "bold", padding: "10px" }}>
+          {" "}
+          {restaurants[1]}{" "}
+        </li>
+        <li style={{ fontWeight: "bold", padding: "10px" }}>
+          {" "}
+          {restaurants[2]}{" "}
+        </li>
+        <li style={{ fontWeight: "bold", padding: "10px" }}>
+          {" "}
+          {restaurants[3]}{" "}
+        </li>
+      </ul>
     </div>
   );
 }
