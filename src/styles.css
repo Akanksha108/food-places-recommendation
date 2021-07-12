@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;500;600;700;800;900&display=swap");
+
+.App {
+  font-family: "Inconsolata";
+  text-align: center;
+}
+
+button {
+  padding: 10px;
+  margin-right: 30px;
+  background-image: linear-gradient(#ff9966, #ff5e62);
+}
