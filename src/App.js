@@ -1,4 +1,14 @@
+import React, { useState } from "react";
 import "./styles.css";
+
+const restaurantList = {
+  Indian: "Spice Kitchen, Seasonal Tastes,           Sukanta, Barbeque Nation",
+  Chinese:
+    "Five Fat Monks, Mainland                  China, Chinese Room, Soy                  Affair",
+  Italian:
+    "Little Italy, Dario’s,                    Arthur’s Theme, Le Plaisir",
+  Continental: "Beetroot Bistro, Chirp,                   Barometer, Kargo"
+};
 
 export default function App() {
   let indianClickHandler = () => {
