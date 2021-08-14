@@ -1,2 +1,2 @@
 # food-places-recommendation
-Created with CodeSandbox
+This application will help you to find some good resturants. 
