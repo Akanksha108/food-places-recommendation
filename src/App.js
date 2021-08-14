@@ -37,7 +37,6 @@ export default function App() {
 
   function indianClickHandler(event) {
     var restaurants = restaurantList.Indian;
-    //console.log(restaurants);
     setRestaurants(restaurants);
   }
 
@@ -57,7 +56,7 @@ export default function App() {
   };
 
   return (
-    <div className="App">
+    <div style={{ textAlign: "center" }} className="App">
       <h1
         style={{
           backgroundImage: "linear-gradient(#7b4397, #dc2430)",
@@ -75,12 +74,18 @@ export default function App() {
         <span>😋</span>
       </p>
       <div style={{ padding: "1rem" }}>
-        <button onClick={indianClickHandler} value="Indian">
+        <button onClick={indianClickHandler} style={{ margin: "10px" }}>
           Indian
         </button>
-        <button onClick={chineseClickHandler}>Chinese</button>
-        <button onClick={italianClickHandler}>Italian</button>
-        <button onClick={continentalClickHandler}>Continental</button>
+        <button onClick={chineseClickHandler} style={{ margin: "10px" }}>
+          Chinese
+        </button>
+        <button onClick={italianClickHandler} style={{ margin: "10px" }}>
+          Italian
+        </button>
+        <button onClick={continentalClickHandler} style={{ margin: "10px" }}>
+          Continental
+        </button>
       </div>
       <ul>
         <li style={{ fontWeight: "bold", padding: "10px" }}>
