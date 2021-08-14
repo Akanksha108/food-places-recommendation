@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import logo from "./pexels-trang-doan-1092730.jpg";
 import "./styles.css";
 
 const restaurantList = {
@@ -99,6 +100,8 @@ export default function App() {
           {restaurants[3]}{" "}
         </li>
       </ul>
+
+      <img src={logo} alt="food" style={{ width: "600px", height: "400px" }} />
     </div>
   );
 }
