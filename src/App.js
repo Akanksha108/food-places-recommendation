@@ -106,7 +106,7 @@ export default function App() {
         </li>
       </ul>
 
-      <img src={logo} alt="food" style={{ width: "600px", height: "400px" }} />
+      <img src={logo} alt="food" style={{ width: "350px", height: "350px" }} />
     </div>
   );
 }
